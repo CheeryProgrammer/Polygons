@@ -28,9 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 0D);
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -72,31 +72,31 @@
 			// 
 			// chart1
 			// 
-			chartArea1.AxisX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-			chartArea1.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-			chartArea1.AxisX.LineColor = System.Drawing.Color.Gray;
-			chartArea1.AxisX2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-			chartArea1.AxisX2.ScaleBreakStyle.StartFromZero = System.Windows.Forms.DataVisualization.Charting.StartFromZero.Yes;
-			chartArea1.AxisY.Crossing = 1.7976931348623157E+308D;
-			chartArea1.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-			chartArea1.AxisY.Interval = 3D;
-			chartArea1.AxisY.LineColor = System.Drawing.Color.Gray;
-			chartArea1.AxisY.Maximum = 3D;
-			chartArea1.AxisY.Minimum = 0D;
-			chartArea1.AxisY2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-			chartArea1.Name = "ChartArea";
-			this.chart1.ChartAreas.Add(chartArea1);
+			chartArea3.AxisX.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+			chartArea3.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+			chartArea3.AxisX.LineColor = System.Drawing.Color.Gray;
+			chartArea3.AxisX2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+			chartArea3.AxisX2.ScaleBreakStyle.StartFromZero = System.Windows.Forms.DataVisualization.Charting.StartFromZero.Yes;
+			chartArea3.AxisY.Crossing = 1.7976931348623157E+308D;
+			chartArea3.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+			chartArea3.AxisY.Interval = 3D;
+			chartArea3.AxisY.LineColor = System.Drawing.Color.Gray;
+			chartArea3.AxisY.Maximum = 3D;
+			chartArea3.AxisY.Minimum = 0D;
+			chartArea3.AxisY2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+			chartArea3.Name = "ChartArea";
+			this.chart1.ChartAreas.Add(chartArea3);
 			this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.chart1.Location = new System.Drawing.Point(0, 0);
 			this.chart1.Name = "chart1";
-			series1.BorderWidth = 3;
-			series1.ChartArea = "ChartArea";
-			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar;
-			series1.Color = System.Drawing.Color.LightSeaGreen;
-			series1.Name = "Series";
-			series1.Points.Add(dataPoint1);
-			series1.ShadowOffset = 2;
-			this.chart1.Series.Add(series1);
+			series3.BorderWidth = 3;
+			series3.ChartArea = "ChartArea";
+			series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar;
+			series3.Color = System.Drawing.Color.LightSeaGreen;
+			series3.Name = "Series";
+			series3.Points.Add(dataPoint3);
+			series3.ShadowOffset = 2;
+			this.chart1.Series.Add(series3);
 			this.chart1.Size = new System.Drawing.Size(569, 413);
 			this.chart1.TabIndex = 3;
 			this.chart1.Text = "Chart";
@@ -117,7 +117,7 @@
 			// 
 			this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
 			this.splitContainer1.Size = new System.Drawing.Size(177, 417);
-			this.splitContainer1.SplitterDistance = 208;
+			this.splitContainer1.SplitterDistance = 207;
 			this.splitContainer1.TabIndex = 3;
 			// 
 			// groupBox1
@@ -130,7 +130,7 @@
 			this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.groupBox1.Location = new System.Drawing.Point(0, 0);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(177, 208);
+			this.groupBox1.Size = new System.Drawing.Size(177, 207);
 			this.groupBox1.TabIndex = 2;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Draw polygon";
@@ -143,6 +143,7 @@
 			this.btnDraw.TabIndex = 2;
 			this.btnDraw.Text = "Draw";
 			this.btnDraw.UseVisualStyleBackColor = true;
+			this.btnDraw.Click += new System.EventHandler(this.BtnDraw_Click);
 			// 
 			// nudRadius
 			// 
@@ -212,7 +213,7 @@
 			this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.groupBox2.Location = new System.Drawing.Point(0, 0);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(177, 205);
+			this.groupBox2.Size = new System.Drawing.Size(177, 206);
 			this.groupBox2.TabIndex = 3;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Statistics";
@@ -225,6 +226,7 @@
 			this.btnCalculate.TabIndex = 2;
 			this.btnCalculate.Text = "Calculate";
 			this.btnCalculate.UseVisualStyleBackColor = true;
+			this.btnCalculate.Click += new System.EventHandler(this.BtnCalculate_Click);
 			// 
 			// tbArea
 			// 
